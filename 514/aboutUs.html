@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" type="image/x-icon" href="img/qituo.ico" />
+		<meta charset="UTF-8">
+		<title>关于我们-企拓信息</title>
+		<style>
+			html,
+			body,
+			div,
+			span,
+			applet,
+			object,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			abbr,
+			acronym,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			dfn,
+			em,
+			img,
+			ins,
+			kbd,
+			q,
+			s,
+			samp,
+			small,
+			strike,
+			strong,
+			sub,
+			sup,
+			tt,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			table,
+			caption,
+			tbody,
+			tfoot,
+			thead,
+			tr,
+			th,
+			td,
+			article,
+			aside,
+			canvas,
+			details,
+			embed,
+			figure,
+			figcaption,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			output,
+			ruby,
+			section,
+			summary,
+			time {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			
+			ol,
+			ul {
+				list-style: none;
+			}
+			
+			ul {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.wrap {
+				width: 1060px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.header {
+				height: 70px;
+				background: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+				z-index: 999;
+				overflow: hidden;
+			}
+			
+			.header img {
+				width: 35px;
+				margin-top: 16px;
+				height: auto;
+			}
+			
+			.header ul {
+				overflow: hidden;
+				float: right;
+				margin-top: 30px;
+			}
+			
+			.header ul li {
+				float: right;
+				list-style: none;
+				margin-right: 30px;
+				line-height: 15px;
+				font-size: 14px;
+			}
+			
+			.header .wrap h2 {
+				font-size: 22px;
+				letter-spacing: 3px;
+				display: inline-block;
+				position: absolute;
+				top: 18px;
+				left: 50px;
+			}
+			
+			a {
+				text-decoration: none;
+				out-line: none;
+				color: #383838;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			
+			.introdu {
+				width: 100%;
+				height: 400px;
+				background-color: #fafafa;
+				overflow: hidden;
+			}
+			
+			.introdu .title {
+				margin-top: 130px;
+				font-size: 42px;
+				line-height: 60px;
+				font-weight: bold;
+			}
+			
+			.introdu .desc {
+				width: 500px;
+				margin-top: 20px;
+				color: #878787;
+				line-height: 24px;
+			}
+			
+			.introdu .content {
+				height: 450px;
+				margin-right: -50px;
+				background: url(http://www.waibaodashi.com/statics/themes/v2/img/about-header-h5.png) no-repeat 100% 0;
+				background-size: 750px 450px;
+				overflow: hidden;
+			}
+			
+			.cont {
+				width: 100%;
+				height: 300px;
+				margin-top: 30px;
+				margin-bottom: 70px;
+			}
+			
+			.cont .info {
+				width: 610px;
+				height: 100%;
+				float: left;
+			}
+			
+			.cont .title {
+				margin-top: 70px;
+				font-size: 34px;
+				line-height: 48px;
+				font-weight: bold;
+				margin-bottom: 20px;
+			}
+			
+			.cont .desc {
+				margin-top: 15px;
+				font-size: 14px;
+				line-height: 24px;
+			}
+			
+			.cont img {
+				float: right;
+				width: 339px;
+				height: 340px;
+				background-color: #fafafa;
+			}
+			
+			.jobs {
+				height: 350px;
+				width: 100%;
+				background-color: #fafafa;
+				padding: 30px 0;
+			}
+			
+			.jobs .info {
+				float: left;
+				width: 610px;
+			}
+			
+			.jobs .pic {
+				float: right;
+				width: auto;
+			}
+			
+			.jobs .pic img {
+				width: 340px;
+				height: 340px;
+			}
+			
+			.jobs h2 {
+				font-size: 34px;
+				height: 48px;
+				font-weight: bold;
+			}
+			
+			.jobs dl dd {
+				margin-top: 5px;
+				font-size: 14px;
+				line-height: 24px;
+				margin-left: 0px;
+			}
+			
+			.tab {
+				margin-top: 20px;
+				border-bottom: solid 2px rgba(0, 0, 0, 0.05);
+				width: 100%;
+				height: 60px;
+			}
+			
+			.tab li {
+				float: left;
+				margin-right: 30px;
+				font-size: 16px;
+				line-height: 45px;
+				color: rgba(0, 0, 0, 0.25);
+				cursor: pointer;
+			}
+			
+			.tab .current {
+				color: #F65434;
+				border-bottom: solid 2px #F65434;
+			}
+			
+			.company {
+				height: 400px;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.company .title {
+				font-size: 34px;
+				line-height: 48px;
+				font-weight: bold;
+				float: left;
+				margin-bottom: 20px;
+			}
+			
+			.company ul {
+				width: 100%;
+				height: 500px;
+				overflow: hidden;
+			}
+			
+			.company li {
+				float: left;
+				width: 160px;
+				height: 80px;
+				margin: 10px;
+				background: #fafafa;
+				border: solid 1px #f7f7f7;
+				box-sizing: border-box;
+			}
+			
+			.company li img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.contact {
+				height: 600px;
+				background: url() no-repeat 50% 50%;
+				background-size: 1920px 600px;
+			}
+			
+			.contact .cont {
+				width: 300px;
+				height: 310px;
+				padding: 40px;
+				margin-top: 105px;
+				background: #fff;
+				box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+				border-radius: 4px;
+				position: absolute;
+			}
+			
+			.contact .cont .title {
+				font-size: 34px;
+				line-height: 48px;
+				font-weight: bold;
+				margin-top: 0px;
+			}
+			
+			.contact .cont dl {
+				margin-top: 0px;
+			}
+			
+			.contact .cont dt {
+				margin-top: 30px;
+				color: #999;
+				line-height: 20px;
+			}
+			
+			.contact .cont dd {
+				margin-top: 5px;
+				font-size: 14px;
+				line-height: 24px;
+				margin-left: 0px;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 300px;
+				margin-top: 50px;
+				background: #333;
+				color: #808080;
+			}
+			
+			.footer .links {
+				float: left;
+				width: 245px;
+				margin-top: 30px;
+			}
+			
+			.footer .links dt {
+				margin-bottom: 25px;
+				line-height: 30px;
+				color: #ccc;
+			}
+			
+			.footer .links dd {
+				line-height: 40px;
+				margin: 0px;
+				margin: 0px;
+			}
+			
+			.footer a {
+				color: #808080;
+				font-size: 14px;
+			}
+			/**/
+			
+			.footer .weixin {
+				float: right;
+				margin-top: 28px;
+				margin-right: 100px;
+			}
+			
+			.footer .weixin img {
+				width: 120px;
+				height: 120px;
+			}
+			
+			.header a:hover {
+				color: #F65434;
+			}
+			
+			.header .current {
+				color: #F65434;
+			}
+			
+			.banquan {
+				background-color: #333;
+				width: 100%;
+				height: 40px;
+			}
+			
+			.banquan .cr {
+				text-align: center;
+				color: #ccc;
+				margin: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<a><img src="img/qituo.png" alt="企拓信息" /></a>
+				<h2>企拓信息</h2>
+				<ul>
+					<li>
+						<a href="aboutUs.html" class="current">关于我们</a>
+					</li>
+					<li>
+						<a href="story.html">相关案例</a>
+					</li>
+					<li>
+						<a href="solution.html">解决方案</a>
+					</li>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="introdu">
+			<div class="wrap">
+				<div class="content">
+					<h2 class="title">连接人类工作技能</h2>
+					<p class="desc">近10年产品资源和经验积累，企拓信息通过链接不同的互联网职业角色技能，以产品设计为核心驱动力，协同专业的项目管理能力，为企业的互联网项目提供最优解决方案。</p>
+				</div>
+				<img class="pic" src="http://www.waibaodashi.com/statics/themes/v2/img/about-header-h5.png">
+			</div>
+
+		</div>
+		<div class="cont">
+			<div class="wrap">
+				<div class="info">
+					<h2 class="title">关于我们</h2>
+					<p class="desc">企拓信息网络科技有限公司，现有员工80余人，拥有一支热情、专员的手机APP开发团队是一个非常有活力、非常有互联网思维的团队。企拓信息拥有一批富有创意的前端开发工程是，认真闷骚的后台开发工程师，耐心细致的售后客服人员，业务娴熟的一线销售顾问。无论是哪一位企拓人，都对互联网行业有着丰富的研发经验和饱满的工作热情。</p>
+				</div>
+				<img src="http://www.waibaodashi.com/statics/themes/v2/img/about-what.png" />
+			</div>
+		</div>
+
+		<div class="jobs">
+			<div class="wrap nav-tabs">
+
+				<h2>加入我们</h2>
+				<div class="tab">
+					<ul class="cl">
+						<li nav-tab="1" class="current">前端工程师</li>
+						<li nav-tab="2" class="">后台工程师</li>
+						<li nav-tab="3" class="">UI设计师</li>
+						<li nav-tab="4" class="">软件销售</li>
+					</ul>
+				</div>
+				<div class="cont cl">
+					<div class="info">
+						<div nav-cont="1" class="item current" style="display: block;">
+							<dl>
+								<dt>任职要求：</dt>
+								<dd>
+									<p>- 热爱技术，有良好的学习能力</p>
+									<p>- 深入理解 Web 标准，熟练掌握 HTML/CSS/JavaScript 等前端技术</p>
+									<p>- 有Vue开发经验优先</p>
+									<p>- 能够实事求是，全力以赴，有责任感，有主动性</p>
+
+								</dd>
+							</dl>
+
+							<dl>
+								<dt>简历投递邮箱：</dt>
+								<dd>
+									<a href="mailto:job@pmcaff.com">zhouhua09@126.com</a>
+								</dd>
+							</dl>
+						</div>
+						<div nav-cont="2" class="item" style="display: none;">
+
+							<dl>
+								<dt>任职要求：</dt>
+								<dd>
+									<p>-具有java项目开发经验</p>
+									<p>-精通Java编程，能够熟练应用springmvc,spring,hibernate等主流开发框架</p>
+									<p>-良好的软件工程意识，熟悉常用的软件工程工具（如Git、Maven）</p>
+									<p>-责任心强，具备良好的沟通技能，团队合作能力和承受压力的能力</p>
+								</dd>
+							</dl>
+							<dl>
+								<dt>简历投递邮箱：</dt>
+								<dd>
+									<a href="mailto:job@pmcaff.com">zhouhua09@126.com</a>
+								</dd>
+							</dl>
+						</div>
+						<div nav-cont="3" class="item" style="display: none;">
+
+							<dl>
+								<dt>任职要求：</dt>
+								<dd>
+									<p>-熟练掌握Photoshop、Axure等设计工具</p>
+									<p>-对软件可用性有一定的认识，能处理复杂交互逻辑的设计，并关注细节</p>
+									<p>-沟通和表述能力强，能高效的完成工作并推动产品进程</p>
+
+								</dd>
+							</dl>
+							<dl>
+								<dt>简历投递邮箱：</dt>
+								<dd>
+									<a href="mailto:job@pmcaff.com">zhouhua09@126.com</a>
+								</dd>
+							</dl>
+						</div>
+						<div nav-cont="4" class="item" style="display: none;">
+							<dl>
+								<dt>岗位职责：</dt>
+
+							</dl>
+							<dl>
+								<dt>任职要求：</dt>
+
+							</dl>
+							<dl>
+								<dt>简历投递邮箱：</dt>
+								<dd>
+									<a href="mailto:job@pmcaff.com">zhouhua09@126.com</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!--<dl class="pic">
+						<dt></dt>
+						<dd></dd>
+					</dl>-->
+				</div>
+
+			</div>
+		</div>
+		<div class="company">
+			<div class="wrap">
+				<h2 class="title">我们服务过的企业</h2>
+				<ul>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-xdf.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-taobao.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-smzdm.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-weibo.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-weibo.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-didi.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-netease.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-tencent.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-toutiao.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-bc.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-360.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-beidayiliao.png"></li>
+					<li><img src="http://www.waibaodashi.com/statics/themes/v2/img/about-digitone.png"></li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="contact">
+			<iframe src="map.html" width="100%" height="600" frameborder="0" scrolling="no" style="
+    float:  left;
+"></iframe>
+			<div class="wrap">
+				<div class="cont">
+					<h2 class="title">联系我们</h2>
+					<dl>
+						<dt>商务合作电话</dt>
+						<dd>+86 13586948026</dd>
+						<dt>商务合作邮箱</dt>
+						<dd>zhouhua09@126.com</dd>
+						<dt>公司地址</dt>
+						<dd>浙江大学宁波理工学院石林大楼<br>钱湖南路一号</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="wrap">
+				<div class="alllinks">
+					<dl class="links">
+						<dt>关于</dt>
+						<dd>
+							<a href="aboutUs.html" target="_blank">关于我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">联系我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">加入我们</a>
+						</dd>
+					</dl>
+					<dl class="links">
+						<dt>帮助</dt>
+						<dd>
+							<a href="/list/5.html" target="_blank">电话 13586948026</a>
+						</dd>
+						<dd>
+							<a href="/list/5.html#contact" target="_blank">邮箱 zhouhua09@126.com</a>
+						</dd>
+					</dl>
+					<dl class="links">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="http://www.nit.net.cn/" target="_blank">浙江大学宁波理工学院</a>
+						</dd>
+						<dd>
+							<a href="http://gsl.nbyz.gov.cn/commerce/Default.aspx" target="_blank">鄞州工商联</a>
+						</dd>
+
+
+					</dl>
+					<div class="weixin">
+						<p>关注微信公众号</p>
+						<img src="img/erweima.png">
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="banquan">
+			<div class="warp">
+				<p class="cr">© 企拓信息&nbsp;2018</p>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		;
+		(function() {
+			$('.nav-tabs').on('click', '[nav-tab]', function() {
+				var tabName = $(this).attr('nav-tab');
+				$(this).addClass('current').siblings().removeClass('current');
+				$(this).parents('.nav-tabs').find('[nav-cont="' + tabName + '"]').show().siblings().hide();
+			});
+		})();
+	</script>
+
+</html>

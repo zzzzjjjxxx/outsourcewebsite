@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #FAFAFA;
+			}
+			ol,
+			ul {
+				list-style: none;
+			}
+			ul{
+				padding: 0px;
+			}
+			.header {
+				height: 70px;
+				background: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+				z-index: 999;
+			}
+			
+			.headercenter {
+				width: 1060px;
+				margin: auto;
+			}
+			
+			.header .headercenterl {
+				display: inline-block;
+			}
+			
+			.header .logo img {
+				width: 150px;
+			}
+			
+			.header .headercenterr {
+				float: right;
+			}
+			
+			.headercenterr li {
+				float: left;
+				margin-right: 30px;
+				line-height: 15px;
+			}
+			.plans {
+				margin-top: 50px;
+				position: absolute;
+				top: 50px;
+				left: 120px;
+			}
+			
+			.wrap {
+				width: 1060px;
+				margin: 0 auto;
+			}
+			
+			.plans .search {
+				display: inline-block;
+				position: relative;
+				float: right;
+				vertical-align: top;
+				box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .05);
+				border-radius: 2px;
+				width: 520px;
+				height: 50px;
+				background: #fff;
+			}
+			
+			.plans .search input {
+				display: inline-block;
+				border: none;
+				box-sizing: border-box;
+				padding: 13px 68px 13px 44px;
+				width: 100%;
+				height: 50px;
+			}
+			
+			.plans .search button {
+				position: absolute;
+				top: 0;
+				right: 20px;
+				border: none;
+				outline: none;
+				padding: 13px 0;
+				color: #F65434;
+				font-size: 14px;
+				line-height: 24px;
+				background: none;
+				cursor: pointer;
+			}
+			
+			.plans .title {
+				font-size: 42px;
+				line-height: 54px;
+				font-weight: bold;
+			}
+			
+			.plans .list {
+				margin: 0 -10px;
+			}
+			
+			.plans .list li {
+				position: relative;
+				float: left;
+				width: 339px;
+				height: 340px;
+				margin: 20px 10px 0;
+				background: #fff;
+				border-radius: 4px;
+				overflow: hidden;
+			}
+			
+			.plans .lsit ul {
+				width: 100%;
+				height: 100%;
+				padding: 0px;
+			}
+			
+			a {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.plans .list li .title {
+				width: 200px;
+				height: 56px;
+				margin: 50px auto 0;
+				font-size: 18px;
+				line-height: 28px;
+				overflow: hidden;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			.plans .list li img {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 340px;
+				height: 224px;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			.tab ul{
+				display: inline-block;
+    width: 100%;
+			}
+			.tab  li{
+				float: left;
+				margin-right: 8px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="headercenter">
+				<div class="headercenterl">
+					<div class="logo">
+						<a href="/"><img src="http://www.waibaodashi.com/statics/themes/v2/img/logo.png" alt="外包大师"></a>
+					</div>
+				</div>
+				<div class="headercenterr">
+					<ul>
+						<li>
+							<i class="icon iconfont icon-nav-tel"></i> 400-618-6518
+						</li>
+						<li class="index"><a href="index.html">首页</a></li>
+
+						<li class="solution" ><a href="slove.html">产品解决方案</a></li>
+						<li class="story">我们的故事</li>
+						<li class="plan">人才入驻计划</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="plans wrap">
+			<div>
+				<div class="search">
+					<input type="text" name="" class="search-keyword" placeholder="请输入关键词搜索">
+					<button type="button" class="search-btn">搜索</button>
+				</div>
+				<h2 class="title">热门解决方案</h2>
+			</div>
+			<div class="list">
+				<ul>
+					<li class="hover-boxshadow">
+						<a href="/show/9/5.html">
+							<h3 class="title">聚合支付解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20171016/1650/%E8%81%9A%E5%90%88%E6%94%AF%E4%BB%98%E5%A4%B4%E5%9B%BE.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/13.html">
+							<h3 class="title">在线考试系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e5397b92ef.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/3.html">
+							<h3 class="title">云红包SDK服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405f5ba027c.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<br />
+			<div class="tab">
+				<ul class="cl">
+					<li class="current">
+						<a href="/list/8.html">全部</a>
+					</li>
+					<li>
+						<a href="/list/9.html">金融</a>
+					</li>
+					<li>
+						<a href="/list/11.html">在线教育</a>
+					</li>
+					<li>
+						<a href="/list/10.html">电商</a>
+					</li>
+					<li>
+						<a href="/list/12.html">健康医疗</a>
+					</li>
+					<li>
+						<a href="/list/24.html">O2O</a>
+					</li>
+					<li>
+						<a href="/list/23.html">旅游</a>
+					</li>
+					<li>
+						<a href="/list/15.html">其他</a>
+					</li>
+				</ul>
+			</div>
+			<div class="list">
+				<ul class="cl" id="dataList">
+
+					<li class="hover-boxshadow">
+						<a href="/show/24/73.html">
+							<h3 class="title">餐饮管理软件</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405eb7db928.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/50.html">
+							<h3 class="title">VR全景营销服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405ea349cfc.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/14.html">
+							<h3 class="title">导医问诊平台</h3>
+							<div class="pic"><img src="http://ohwstz5oc.bkt.clouddn.com/20170728/1928/pic-1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/12.html">
+							<h3 class="title">家校互动平台</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e552a3da95.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/6.html">
+							<h3 class="title">商户系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405f0325572.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/5.html">
+							<h3 class="title">聚合支付解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20171016/1650/%E8%81%9A%E5%90%88%E6%94%AF%E4%BB%98%E5%A4%B4%E5%9B%BE.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/74.html">
+							<h3 class="title">全渠道零售O2O系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e53ae0ff3a.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/71.html">
+							<h3 class="title">旅游APP产品</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405edf4093b.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/38.html">
+							<h3 class="title">电商众筹服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bacd441c17.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/35.html">
+							<h3 class="title">云钱包SDK服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baab5ef375.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/15.html">
+							<h3 class="title">VR+口腔医疗解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20170925/1844/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170925155643.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/13.html">
+							<h3 class="title">在线考试系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e5397b92ef.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/72.html">
+							<h3 class="title">餐饮一体化管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baf16aa11d.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/37.html">
+							<h3 class="title">微信商城小程序开发 小程序定制 H5商城开发</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bad126774b.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/36.html">
+							<h3 class="title">智慧旅游</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405f69ca203.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/33.html">
+							<h3 class="title">医疗OA办公自动化系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e543b0354f.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/17.html">
+							<h3 class="title">教育云点播系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e550193c1c.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/3.html">
+							<h3 class="title">云红包SDK服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405f5ba027c.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/145.html">
+							<h3 class="title">汽车行业进销存管理系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a40683973371.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/144.html">
+							<h3 class="title">汽车4s店客户关系管理系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4067fe8b157.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/143.html">
+							<h3 class="title">汽车4S行业办公信息化解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4067b785e16.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/14/142.html">
+							<h3 class="title">电信行业ERP企业资源管理系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a40677791622.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/14/141.html">
+							<h3 class="title">电信行业oa系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a40672aab64e.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/14/140.html">
+							<h3 class="title">建材行业erp解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4067014ed94.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/136.html">
+							<h3 class="title">旅游电子商务平台软件</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4064bcd849a.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/135.html">
+							<h3 class="title">智慧公交</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a40649c3e237.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/134.html">
+							<h3 class="title">医疗卫生APP开发</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a406461693c1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/129.html">
+							<h3 class="title">物流APP开发</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4062fd7bd64.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/128.html">
+							<h3 class="title">物流供应链解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4062e7b2e2e.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/127.html">
+							<h3 class="title">物业APP开发解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4062b4c6cff.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/126.html">
+							<h3 class="title">b2c网站建设解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a406158cf300.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/125.html">
+							<h3 class="title"> 金融APP开发解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a4060d71a6b1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/124.html">
+							<h3 class="title">微酒店订房系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b6fd14bab1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/123.html">
+							<h3 class="title">单体酒店解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b6fb1ba077.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/122.html">
+							<h3 class="title">连锁酒店解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b6fd14bab1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/120.html">
+							<h3 class="title">企业在线培训系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b6ff9e90ef.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/119.html">
+							<h3 class="title">教学资源库</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b6ff9e90ef.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/118.html">
+							<h3 class="title">医院信息系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3b655184312.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/111.html">
+							<h3 class="title">外卖行业O2O解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3a153ac008c.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/110.html">
+							<h3 class="title">医疗器械CRM系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e543b0354f.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/105.html">
+							<h3 class="title">跨境电商解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a3a153ac008c.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/102.html">
+							<h3 class="title">档案管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a38d211cea60.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/79.html">
+							<h3 class="title">基金理财优选平台</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a30d44c119eb.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/77.html">
+							<h3 class="title">教育培训APP开发</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a2f9543c55b0.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/70.html">
+							<h3 class="title">商业视觉设计服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2028a4e9.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/69.html">
+							<h3 class="title">互联网产品UI设计</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb21d42a64.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/68.html">
+							<h3 class="title">旅游景区微信售票系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e53e81c6e1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/67.html">
+							<h3 class="title">测试手机租赁服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb23a7d090.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/66.html">
+							<h3 class="title">App测试服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2572ebcc.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/65.html">
+							<h3 class="title">产品众测服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2743b226.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/64.html">
+							<h3 class="title">企业官网制作</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb298bb018.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/63.html">
+							<h3 class="title">企业OA系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2b755d88.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/62.html">
+							<h3 class="title">工程管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2d59b49a.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/61.html">
+							<h3 class="title">物联网智能设备管理平台</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb2f9ac9e0.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/60.html">
+							<h3 class="title">智能停车</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb32322884.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/59.html">
+							<h3 class="title">企业／产品VR展示</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb3572a8b9.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/58.html">
+							<h3 class="title">智能家居一站式解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb37f13467.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/57.html">
+							<h3 class="title">招聘服务解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb39b6eb4e.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/56.html">
+							<h3 class="title">互联网转型 产品咨询服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb3b98c088.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/55.html">
+							<h3 class="title">FaceTracker人脸跟踪 解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb3dba046f.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/54.html">
+							<h3 class="title">视频拍摄及动画制作-阴阳师手游御用</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb43cf0075.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/53.html">
+							<h3 class="title">云直播服务解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb45d545c3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/52.html">
+							<h3 class="title">云点播服务解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb47e2f997.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/15/51.html">
+							<h3 class="title">SEO诊断与优化方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bb49e52acc.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/49.html">
+							<h3 class="title">景区信息发布管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e53feedc2f.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/48.html">
+							<h3 class="title">融媒体城市信息服务平台</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baf399fda6.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/47.html">
+							<h3 class="title">商务区生活服务平台</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baf51dd6cf.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/24/46.html">
+							<h3 class="title">智慧社区</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baf6acb8f7.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/45.html">
+							<h3 class="title">企业VI设计/高端品牌设计定制</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1babbc3cc66.gif" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/44.html">
+							<h3 class="title">短信群发服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1babe516f9c.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/23/43.html">
+							<h3 class="title">景区智能导游系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e541555d12.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/42.html">
+							<h3 class="title">微信H5营销</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bac41c4cf0.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/41.html">
+							<h3 class="title">AI智能推荐系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bac6b975f2.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/40.html">
+							<h3 class="title">初创品牌营销方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bac8c94135.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/39.html">
+							<h3 class="title">增长智能服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bacb120021.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/32.html">
+							<h3 class="title">诊所全科管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e5446a79f4.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/31.html">
+							<h3 class="title">移动查房系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54532ff34.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/30.html">
+							<h3 class="title">医疗CRM管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e546083e97.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/28.html">
+							<h3 class="title">体检管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e546d8d897.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/27.html">
+							<h3 class="title">增长智能服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1bab2d546ff.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/25.html">
+							<h3 class="title">检验信息管理系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54787ac6e.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/24.html">
+							<h3 class="title">教育官网系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405ec87c9a6.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/23.html">
+							<h3 class="title">电子病历系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e5484c1673.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/22.html">
+							<h3 class="title">网校系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54d02a5ac.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/21.html">
+							<h3 class="title">CDSS临床辅助决策支持系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e5490abf67.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/12/20.html">
+							<h3 class="title">移动预约挂号系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54a0e2be1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/19.html">
+							<h3 class="title">智慧校园</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54e95d42c.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/18.html">
+							<h3 class="title">智能排课系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e54f562b47.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/16.html">
+							<h3 class="title">翻转课堂</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e550d92e99.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/11.html">
+							<h3 class="title">教育连锁机构标准化管理平台</h3>
+							<div class="pic"><img src="http://ohwstz5oc.bkt.clouddn.com/20170728/1926/pic-1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/11/10.html">
+							<h3 class="title">教育直播系统</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1e553709390.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/9.html">
+							<h3 class="title">账户系统解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20171016/1649/%E8%B4%A6%E6%88%B7%E7%B3%BB%E7%BB%9F%E5%A4%B4%E5%9B%BE.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/8.html">
+							<h3 class="title">聚合支付解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20171016/1650/%E8%81%9A%E5%90%88%E6%94%AF%E4%BB%98%E5%A4%B4%E5%9B%BE.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/10/7.html">
+							<h3 class="title">区块链优惠券解决方案</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20171017/1555/%E5%8C%BA%E5%9D%97%E9%93%BE%E5%A4%B4%E5%9B%BE.jpg" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/4.html">
+							<h3 class="title">金融超市SDK服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20170927/1442/%E9%87%91%E8%9E%8D%E8%B6%85%E5%B8%82SDK%E6%9C%8D%E5%8A%A1.png" alt=""></div>
+						</a>
+					</li>
+					<li class="hover-boxshadow">
+						<a href="/show/9/2.html">
+							<h3 class="title">云保险SDK服务</h3>
+							<div class="pic"><img src="http://file.waibaodashi.com/20170925/1559/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170925155643.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

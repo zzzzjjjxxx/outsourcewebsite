@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" type="image/x-icon" href="img/qituo.ico" />
+		<meta charset="UTF-8">
+		<title>首页-企拓信息</title>
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<style>
+			input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+			html,
+			body,
+			div,
+			span,
+			applet,
+			object,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			abbr,
+			acronym,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			dfn,
+			em,
+			img,
+			ins,
+			kbd,
+			q,
+			s,
+			samp,
+			small,
+			strike,
+			strong,
+			sub,
+			sup,
+			tt,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			table,
+			caption,
+			tbody,
+			tfoot,
+			thead,
+			tr,
+			th,
+			td,
+			article,
+			aside,
+			canvas,
+			details,
+			embed,
+			figure,
+			figcaption,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			output,
+			ruby,
+			section,
+			summary,
+			time {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			
+			input {
+				outline: none;
+			}
+			
+			ol,
+			ul {
+				list-style: none;
+			}
+			
+			.wrap {
+				width: 1060px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.header {
+				height: 70px;
+				background: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+				z-index: 999;
+				overflow: hidden;
+			}
+			
+			.header img {
+				width: 35px;
+				margin-top: 16px;
+				height: auto;
+			}
+			
+			.header ul {
+				overflow: hidden;
+				float: right;
+				margin-top: 30px;
+			}
+			
+			.header ul li {
+				float: right;
+				list-style: none;
+				margin-right: 30px;
+				line-height: 15px;
+				font-size: 14px;
+			}
+			
+			.header .wrap h2 {
+				font-size: 22px;
+				letter-spacing: 3px;
+				display: inline-block;
+				position: absolute;
+				top: 18px;
+				left: 50px;
+			}
+			
+			a {
+				text-decoration: none;
+				out-line: none;
+				color: #383838;
+			}
+			
+			.intro {
+				width: 100%;
+				height: 500px;
+			}
+			
+			.intro .kskfwb {
+				font-size: 42px;
+				line-height: 54px;
+				font-weight: bold;
+				position: absolute;
+				top: 300px;
+			}
+			
+			.intro .ycpqd {
+				font-size: 42px;
+				line-height: 54px;
+				float: left;
+				position: absolute;
+				top: 350px;
+			}
+			
+			.webhref {
+				background-color: #FAFAFA;
+				height: 114px;
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			.webhref li {
+				float: left;
+			}
+			
+			.webhref .wrap img {
+				margin-right: 25px;
+			}
+			
+			.industry {
+				width: 100%;
+				height: 300px;
+				margin-top: 50px;
+			}
+			
+			.industry h2 {
+				font-size: 30px;
+				line-height: 42px;
+				font-weight: bold;
+				margin: 30px 0;
+			}
+			
+			.industry ul {
+				overflow: hidden;
+			}
+			
+			.industry ul li {
+				float: left;
+				margin-left: 6px;
+			}
+			
+			.industry ul li img {
+				width: 160px;
+				height: 160px;
+			}
+			
+			.industry ul li p {
+				margin-top: 10px;
+				font-size: 16px;
+				font-weight: bold;
+			}
+			
+			.product {
+				width: 100%;
+				height: 250px;
+				margin-top: 50px;
+			}
+			
+			.product h2 {
+				font-size: 30px;
+				line-height: 42px;
+				font-weight: bold;
+				margin: 30px 0;
+			}
+			
+			.product ul {
+				overflow: hidden;
+				border: solid 2px #f7f7f7;
+			}
+			
+			.product ul li {
+				float: left;
+				width: 264px;
+				height: 158px;
+				margin: 0px -2px -2px 0px;
+				border-bottom: solid 2px #f7f7f7;
+				border-right: solid 2px #f7f7f7;
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.product ul li img {
+				width: 60px;
+				height: 60px;
+				margin-top: 35px;
+			}
+			
+			.product ul li p {
+				margin-top: 10px;
+				/* font-size: 16px; */
+				font-weight: bold;
+				line-height: 20px;
+				font-size: 14px;
+			}
+			
+			.service {
+				width: 100%;
+				height: 500px;
+				margin-top: 50px;
+			}
+			
+			.service h2 {
+				font-size: 30px;
+				line-height: 42px;
+				font-weight: bold;
+				margin: 30px 0;
+			}
+			
+			.service ul {
+				overflow: hidden;
+			}
+			
+			.service ul li {
+				float: left;
+				width: 200px;
+				height: 400px;
+				margin: 0 10px;
+				padding: 0 20px;
+				text-align: center;
+				border-radius: 4px;
+				background: #fafafa;
+			}
+			
+			.service ul li img {
+				width: 140px;
+				height: 140px;
+				margin-top: 50px;
+			}
+			
+			.service li .txt {
+				margin-top: 30px;
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: bold;
+			}
+			
+			.service li .desc {
+				margin-top: 20px;
+				line-height: 24px;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 300px;
+				margin-top: 50px;
+				background: #333;
+				color: #808080;
+			}
+			
+			.footer .links {
+				float: left;
+				width: 245px;
+				margin-top: 30px;
+			}
+			
+			.footer .links dt {
+				margin-bottom: 25px;
+				line-height: 30px;
+				color: #ccc;
+			}
+			
+			.footer .links dd {
+				line-height: 40px;
+				margin: 0px;
+				margin: 0px;
+			}
+			
+			.footer a {
+				color: #808080;
+				font-size: 14px;
+			}
+			/**/
+			
+			.footer .weixin {
+				float: right;
+				margin-top: 28px;
+				margin-right: 100px;
+			}
+			
+			.footer .weixin img {
+				width: 120px;
+				height: 120px;
+			}
+			
+			.header a:hover {
+				color: #F65434;
+			}
+			
+			.header .current {
+				color: #F65434;
+			}
+			
+			.banquan {
+				background-color: #333;
+				width: 100%;
+				height: 40px;
+			}
+			
+			.banquan .cr {
+				text-align: center;
+				color: #ccc;
+			}
+			
+			.youxiang {
+				margin: 30px;
+				border-bottom-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+				border-top-left-radius: 50%;
+				border-top-right-radius: 50%;
+				padding: 15px;
+				background-color: #fff;
+				border: 1px solid rgba(0, 0, 0, .1);
+				z-index: 9;
+			}
+			
+			.ticketForm {
+				display: none;
+				overflow: hidden;
+				position: fixed;
+				width: 300px;
+				height: 500px;
+				top: 210px;
+				left: 880px;
+				background-color: #fafafa;
+				z-index: 9;
+				box-sizing: border-box;
+				box-shadow: 0 1px 7px 5px rgba(0,0,0,.06), 0 2px 0 0 rgba(0,0,0,.01);
+			}
+			
+			.ticketsuccess {
+				display: none;
+				overflow: hidden;
+				position: fixed;
+				width: 300px;
+				height: 500px;
+				top: 210px;
+				left: 880px;
+				background-color: #fafafa;
+				z-index: 9;
+				box-shadow: 1px;
+				/*box-shadow: 2px 2px 2px 2px rgba(0.05, 0.05, 0.05, 0.05);*/
+				box-shadow: 0 1px 7px 5px rgba(0,0,0,.06), 0 2px 0 0 rgba(0,0,0,.01);
+				
+			}
+			
+			.ticketForm h3 {
+				width: 295px;
+				height: 30px;
+				background-color: #f65434;
+				color: #fff;
+				/* float: left;*/
+				padding-top: 13px;
+				padding-left: 6px;
+				font-size: 14px;
+			}
+			
+			.ticketsuccess h3 {
+				width: 295px;
+				height: 30px;
+				background-color: #f65434;
+				color: #fff;
+				/* float: left;*/
+				padding-top: 13px;
+				padding-left: 6px;
+				font-size: 14px;
+			}
+			
+			.ticketForm .tips {
+				margin-left: 6px;
+				font-size: 12px;
+				color: #666;
+				word-break: break-all;
+				line-height: 1.8;
+				margin-top: 16px;
+			}
+			
+			.ticketForm input[type=text] {
+				width: 285px;
+				height: auto;
+				padding: 6px;
+			}
+			
+			.tickesuccess p {
+				margin: 10px;
+			}
+			
+			.ticketForm .phone {
+				margin: 16px 0 6px 6px;
+				color: #444;
+				font-size: 12px;
+			}
+			
+			.ticketForm .liuyan {
+				margin: 16px 0 6px 6px;
+				color: #444;
+				font-size: 12px;
+			}
+			
+			.ticketForm textarea {
+				display: block;
+				width: 287px;
+				height: 90px;
+				padding: 10px 6px;
+				overflow-x: hidden;
+				overflow-y: auto;
+				resize: none;
+				outline: 0;
+				background-color: #fff;
+				word-break: break-all;
+				font-size: 12px;
+				border-width:0px ;
+				text-indent: 0px;
+				/*-webkit-appearance: none;*/
+			}
+			
+			#ticketSubmit {
+				display: block;
+				width: 270px;
+				height: 44px;
+				border-radius: 5px;
+				line-height: 44px;
+				text-align: center;
+				font-size: 15px;
+				background-color: #f65434;
+				color: #fff;
+				margin: 17px;
+			}
+			
+			#ticketclose {
+				display: block;
+				width: 270px;
+				height: 44px;
+				border-radius: 5px;
+				line-height: 44px;
+				text-align: center;
+				font-size: 15px;
+				background-color: #f65434;
+				color: #fff;
+				margin: 17px;
+			}
+			
+			.ticketForm i {
+				float: right;
+				margin-right: 20px;
+			}
+			
+			.ticketsuccess i {
+				float: right;
+				margin-right: 20px;
+			}
+			
+			.icon {
+				background-image: url(https://static.meiqia.com/dist/images/icon-desktop.png?v=w84uct89oxjn61or);
+				background-size: 44px auto;
+				background-repeat: no-repeat;
+			}
+			
+			.icon-angel-down {
+				display: block;
+				width: 22px;
+				height: 22px;
+			}
+			
+			.icon-angel-down {
+				background-position: -22px -66px;
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<a><img src="img/qituo.png" alt="企拓信息" /></a>
+				<h2>企拓信息</h2>
+				<ul>
+					<li>
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li>
+						<a href="story.html">相关案例</a>
+					</li>
+					<li>
+						<a href="solution.html">解决方案</a>
+					</li>
+					<li>
+						<a href="index.html" class="current">首页</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="intro">
+			<div class="wrap">
+				<h1 class="kskfwb">快速发布外包项目</h1>
+				<h2 class="ycpqd">以产品驱动高质量项目交付</h2>
+
+			</div>
+		</div>
+		<style>
+			.img1{
+				margin-top: 41px;
+    width: 199px;
+			}
+			.img2{
+				width: 200px;
+    /* height: 92px; */
+    margin-top: 37px;
+			}
+			.img3 {
+    width: 68px;
+    /* height: 98px; */
+    margin-top: 23px;
+}
+			.img4{
+			width: 181px;
+    /* height: 88px; */
+    margin-top: 32px;
+				
+			}
+			.img5 {
+    width: 73px;
+    /* height: 72px; */
+    margin-top: 25px;
+}
+.img6 {
+    width: 189px;
+    margin-top: 38px;
+}
+		</style>
+		<div class="webhref">
+			<div class="wrap">
+				<ul>
+					<li>
+						<img class="img1" / src="img/博威gray.png"></li>
+					<li>
+						<img  class="img2" / src="img/三生gray.png"></li>
+					<li>
+						<img/ class="img3" src="img/工商联gray.png"></li>
+					<li>
+						<img class="img4" /  src="img/文化广场gray.png"></li>
+					<li>
+						<img/  class="img5" src="img/零点gray.png"></li>
+					<li>
+						<img class="img6" / src="img/894362335627173492.png"></li>
+					<i class="fa fa-envelope youxiang" aria-hidden="true" style="position: fixed;"></i>
+					<div class="ticketForm">
+						<h3>给我们留言<i class="icon icon-angel-down guanbi"></i></h3>
+						<div class="tips">您好，很抱歉我们暂时无法为您提供服务，如需帮助，请留言，我们将尽快联系并解决您的问题</div>
+						<div class="phone">手机</div>
+						<input id="ticketTel" type="text" placeholder=" 请输入手机号">
+						<div class="liuyan">留言内容</div>
+						<textarea id="ticketContent" placeholder="请输入留言内容"></textarea>
+						<a id="ticketSubmit">提交</a>
+					</div>
+					<div class="ticketsuccess">
+						<h3>给我们留言<i class="icon icon-angel-down "></i></h3>
+
+						<p style="margin: 20px 20px 0 20px;text-align:  center;">
+							<strong>您的需求已经提交成功</strong><br/>产品顾问将尽快与您取得联系</p>
+						<img src="" alt="">
+						<p style="margin: 0px 20px 20px 20px;text-align:  center;">
+							扫码关注微信公众号<br/>随时获取项目状态</p>
+						<a id="ticketclose">关闭</a>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div class="industry ">
+			<div class="wrap">
+				<h2>行业解决方案</h2>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-education.png" />
+							<p>在线教育</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-e-commerce.png" />
+							<p>电商+新零售</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-finance.png" />
+							<p>互联网金融</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-health.png" />
+							<p>O2O</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-o2o.png" />
+							<p>旅游</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/index-travel.png" />
+							<p>在线教育</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="product">
+			<div class="wrap">
+				<h2>我们能做什么</h2>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91.png" />
+							<p>App开发</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.png" />
+							<p>微信平台开发</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/%E4%BA%A4%E4%BA%92%E8%AE%BE%E8%AE%A1.png" />
+							<p>网站开发</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://www.waibaodashi.com/statics/themes/v2/img/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%BB%BA%E8%AE%BE.png" />
+							<p>管理系统开发</p>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="service">
+			<div class="wrap">
+				<h2>我们的服务保障</h2>
+				<ul>
+					<li>
+						<img src="http://www.waibaodashi.com/statics/themes/v2/img/safeguard-1.gif" />
+						<p class="txt">高可用代码研发</p>
+						<p class="desc">专业Apihub管理工具，通过前后分离规范化代码实施，降低开发成本，超越竞争对手快人一步</p>
+					</li>
+					<li>
+						<img src="http://www.waibaodashi.com/statics/themes/v2/img/safeguard-2.gif" />
+						<p class="txt">SCRUM精细项目管理</p>
+						<p class="desc">29项节点监控，32项交付物文档，10年+经验项目经理一对一服务，精细化持续管控</p>
+					</li>
+					<li>
+						<img src="http://www.waibaodashi.com/statics/themes/v2/img/safeguard-3.gif" />
+						<p class="txt">全行业领域产品智库</p>
+						<p class="desc">30万全行业领域产品经理精准匹配，快速验证需求有效性</p>
+					</li>
+					<li>
+						<img src="http://www.waibaodashi.com/statics/themes/v2/img/safeguard-4.gif" />
+						<p class="txt">应用程序业务网络</p>
+						<p class="desc">基于各类优质已验证产品应用方案，与业务深度结合，搭建专属应用程序业务网络</p>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="webhref">
+			<div class="wrap">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="wrap">
+				<div class="alllinks">
+					<dl class="links">
+						<dt>关于</dt>
+						<dd>
+							<a href="aboutUs.html" target="_blank">关于我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">联系我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">加入我们</a>
+						</dd>
+					</dl>
+					<dl class="links">
+						<dt>帮助</dt>
+						<dd>
+							<a href="/list/5.html" target="_blank">电话 13586948026</a>
+						</dd>
+						<dd>
+							<a href="/list/5.html#contact" target="_blank">邮箱 zhouhua09@126.com</a>
+						</dd>
+
+					</dl>
+					<dl class="links">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="http://www.nit.net.cn/" target="_blank">浙江大学宁波理工学院</a>
+						</dd>
+						<dd>
+							<a href="http://gsl.nbyz.gov.cn/commerce/Default.aspx" target="_blank">鄞州工商联</a>
+						</dd>
+
+					</dl>
+					<div class="weixin">
+						<p>关注微信公众号</p>
+						<img src="img/erweima.png">
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="banquan">
+			<div class="warp">
+				<p class="cr">© 企拓信息&nbsp;2018</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script>
+		$userInfoBox = $(".ticketForm");
+		$userInfoIcon = $(".youxiang");
+		$usersuccess = $(".ticketsuccess");
+		$userInfoIcon.on("click", function(e) {
+
+			if($userInfoBox.css("display") === "none") {
+				$userInfoBox.fadeIn(200);
+			} else {
+				$userInfoBox.fadeOut(200);
+			}
+			e.stopPropagation();
+
+		});
+
+		//  $($userInfoBox).on("click", function(e){
+		//      e.stopPropagation();
+		//  });
+
+		$(".guanbi").on("click", function() {
+			if($userInfoBox.css("display") !== "none") {
+				$userInfoBox.fadeOut(200);
+			}
+		});
+		//		$(".guanbi").on("click", function() {
+		//			if($usersuccess.css("display") !== "none") {
+		//				$usersuccess.fadeOut(200);
+		//			}
+		//		});
+		$("#ticketSubmit").on("click", function() {
+			if($userInfoBox.css("display") !== "none") {
+				$userInfoBox.fadeOut(200);
+				$usersuccess.fadeIn(200);
+			}
+		});
+		$("#ticketclose").on("click", function() {
+			if($usersuccess.css("display") !== "none") {
+				$usersuccess.fadeOut(200);
+			}
+		});
+	</script>
+
+</html>

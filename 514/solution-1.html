@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" type="image/x-icon" href="img/qituo.ico" />  
+		<meta charset="UTF-8">
+		<title>解决方案-企拓信息</title>
+		<style>
+			html,
+			body,
+			div,
+			span,
+			applet,
+			object,
+			iframe,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote,
+			pre,
+			a,
+			abbr,
+			acronym,
+			address,
+			big,
+			cite,
+			code,
+			del,
+			dfn,
+			em,
+			img,
+			ins,
+			kbd,
+			q,
+			s,
+			samp,
+			small,
+			strike,
+			strong,
+			sub,
+			sup,
+			tt,
+			var,
+			b,
+			u,
+			i,
+			center,
+			dl,
+			dt,
+			dd,
+			ol,
+			ul,
+			li,
+			fieldset,
+			form,
+			label,
+			legend,
+			table,
+			caption,
+			tbody,
+			tfoot,
+			thead,
+			tr,
+			th,
+			td,
+			article,
+			aside,
+			canvas,
+			details,
+			embed,
+			figure,
+			figcaption,
+			footer,
+			header,
+			hgroup,
+			menu,
+			nav,
+			output,
+			ruby,
+			section,
+			summary,
+			time {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			
+			ol,
+			ul {
+				list-style: none;
+			}
+			
+			ul {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			.wrap {
+				width: 1060px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			.header {
+				height: 70px;
+				background: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+				z-index: 999;
+				overflow: hidden;
+			}
+			
+			.header img {
+				width: 35px;
+				margin-top: 16px;
+				height: auto;
+			}
+			
+			.header ul {
+				overflow: hidden;
+				float: right;
+				margin-top: 30px;
+			}
+			
+			.header ul li {
+				float: right;
+				list-style: none;
+				margin-right: 30px;
+				line-height: 15px;
+				font-size: 14px;
+			}
+			
+			.header .wrap h2 {
+				font-size: 22px;
+				letter-spacing: 3px;
+				display: inline-block;
+				position: absolute;
+				top: 18px;
+				left: 50px;
+			}
+			a {
+				text-decoration: none;
+				out-line: none;
+				color: #383838;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			
+			.plan-info {
+				width: 100%;
+				height: 300px;
+				margin-top: 90px;
+				background-color: #FFFFFF;
+			}
+			/*.plan-info {
+    margin-top: 30px;
+    padding: 50px 120px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    border-radius: 4px;
+    box-sizing: border-box;
+}*/
+			
+			.plan-info .wrap {
+				background-color: #FAFAFA;
+				height: 100%;
+				box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+				border-radius: 4px;
+				box-sizing: border-box;
+				padding: 40px 120px;
+			}
+			
+			.plan-info .info {
+				width: 300px;
+				/* margin: 0px; */
+				height: 250px;
+				display: inline-block;
+			}
+			
+			.plan-info .info h1 {
+				height: 40px;
+				font-size: 24px;
+				line-height: 40px;
+				overflow: hidden;
+				font-weight: bold;
+			}
+			
+			.plan-info .info p {
+				height: 72px;
+				margin-top: 20px;
+				line-height: 24px;
+				overflow: hidden;
+				color: #666;
+			}
+			
+			.plan-info .info .btn:hover {
+				background: #E65038;
+			}
+			
+			.plan-info .info .btn {
+				display: block;
+				width: 180px;
+				height: 40px;
+				margin-top: 30px;
+				background: #F65434;
+				border-radius: 2px;
+				color: #fff;
+				line-height: 40px;
+				text-align: center;
+			}
+			
+			.plan-info img {
+				width: 320px;
+				height: 210px;
+				float: right;
+			}
+			
+			.plan-detail {
+				width: 100%;
+				height: 4800px;
+			}
+			
+			.plan-detail .wrap {
+				margin-top: 20px;
+				background: #FAFAFA;
+				padding: 50px 120px;
+				box-sizing: border-box;
+				box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+				border-radius: 4px;
+			}
+			
+			.plan-detail h2 {
+				font-size: 24px;
+				line-height: 32px;
+				font-weight: bold;
+			}
+			
+			.plan-detail .cont {
+				margin-top: 50px;
+			}
+			
+			.recommend {
+				margin-top: 30px;
+				width: 100%;
+				height: 400px;
+			}
+			
+			.recommend h2 {
+				font-size: 20px;
+				line-height: 28px;
+				font-weight: bold;
+			}
+			
+			.recommend h3 {
+				width: 200px;
+				height: 56px;
+				margin: 50px auto 0;
+				font-size: 18px;
+				line-height: 28px;
+				overflow: hidden;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			.recommend img {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 340px;
+				height: 224px;
+			}
+			
+			.recommend ul {
+				overflow: hidden;
+				margin: 0px;
+			}
+			
+			.recommend li {
+				position: relative;
+				float: left;
+				width: 320px;
+				height: 340px;
+				margin: 20px 10px 0;
+				background: #fff;
+				border-radius: 4px;
+				overflow: hidden;
+			}
+			
+			.footer {
+				width: 100%;
+				height: 300px;
+				margin-top: 50px;
+				background: #333;
+				color: #808080;
+			}
+			
+			.footer .links {
+				float: left;
+				width: 245px;
+				margin-top: 30px;
+			}
+			
+			.footer .links dt {
+				margin-bottom: 25px;
+				line-height: 30px;
+				color: #ccc;
+			}
+			
+			.footer .links dd {
+				line-height: 40px;
+				margin: 0px;
+				margin: 0px;
+			}
+			
+			.footer a {
+				color: #808080;
+				font-size: 14px;
+			}
+			/**/
+			
+			.footer .weixin {
+				float: right;
+				margin-top: 28px;
+				margin-right: 100px;
+			}
+			
+			.footer .weixin img {
+				width: 120px;
+				height: 120px;
+			}
+			
+			.header a:hover {
+				color: #F65434;
+			}
+			
+			.header .current  {
+				color: #F65434;
+			}
+			
+			.banquan {
+				background-color: #333;
+				width: 100%;
+				height: 40px;
+			}
+			
+			.banquan .cr {
+				text-align: center;
+				color: #ccc;
+				margin: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="wrap">
+				<a><img src="img/qituo.png" alt="企拓信息" /></a><h2>企拓信息</h2>
+				<ul>
+					<li>
+						<a href="aboutUs.html">关于我们</a>
+					</li>
+					<li>
+						<a href="story.html">相关案例</a>
+					</li>
+					<li>
+						<a href="solution.html"class="current">解决方案</a>
+					</li>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="plan-info">
+			<div class="wrap">
+				<img src="http://file.waibaodashi.com/20171016/1650/%E8%81%9A%E5%90%88%E6%94%AF%E4%BB%98%E5%A4%B4%E5%9B%BE.jpg" />
+				<div class="info">
+					<h1>聚合支付解决方案</h1>
+					<p>覆盖所有主流支付渠道，简单、快捷的接入体验，同时提供简单易用的管理平台，集中进行跨渠道的交易管理和财务管理。帮助企业快速、高效和高质量地建立「泛支付」模块，从容应对任何交易场景的挑战。</p>
+					<a href="/order/9/5.html" class="btn" onclick="_czc.push(&#65279;['_trackEvent','立即咨询','click']);" rel="nofollow">立即咨询</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="plan-detail">
+			<div class="wrap">
+				<h2>聚合支付解决方案介绍</h2>
+				<div class="cont">
+					<p>产品详情</p>
+					<p style="transition: all 0.5s; padding: 0px; margin-top: 0px; margin-bottom: 10px; list-style: none; border: none; box-sizing: border-box; font-size: 16px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; line-height: 28px;"><img src="http://file.waibaodashi.com/20171016/59e452a608ac7.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"></p>
+					<p style="transition: all 0.5s; padding: 0px; margin-top: 0px; margin-bottom: 10px; list-style: none; border: none; box-sizing: border-box; font-size: 16px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; line-height: 28px;"><span style="transition: all 0.5s; padding: 0px; margin: 0px; list-style: none; border: none; box-sizing: border-box; font-size: 20px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased;"><strong style="transition: all 0.5s;">产品功能</strong></span><img src="http://file.waibaodashi.com/20171016/59e452a96f09f.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"><img src="http://file.waibaodashi.com/20171016/59e452a96f09f.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"><img src="http://file.waibaodashi.com/20171016/59e452aeae116.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"><img src="http://file.waibaodashi.com/20171016/59e452b0ea83c.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"><img src="http://file.waibaodashi.com/20171016/59e452ca6f7c2.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"></p>
+					<p style="transition: all 0.5s; padding: 0px; margin-top: 0px; margin-bottom: 10px; list-style: none; border: none; box-sizing: border-box; font-size: 16px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; line-height: 28px;"><span style="transition: all 0.5s; padding: 0px; margin: 0px; list-style: none; border: none; box-sizing: border-box; font-size: 20px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased;"><strong style="transition: all 0.5s;">产品优势</strong></span><img src="http://file.waibaodashi.com/20171016/59e452d23addc.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"></p>
+					<p style="transition: all 0.5s; padding: 0px; margin-top: 0px; margin-bottom: 10px; list-style: none; border: none; box-sizing: border-box; font-size: 16px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; line-height: 28px;"><span style="transition: all 0.5s; padding: 0px; margin: 0px; list-style: none; border: none; box-sizing: border-box; font-size: 20px; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased;"><strong style="transition: all 0.5s;">帮助与文档</strong></span><img src="http://file.waibaodashi.com/20171016/59e452d6444d6.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"><img src="http://file.waibaodashi.com/20171016/59e452d8bb19c.jpg" title="" alt="" style="transition: all 0.5s; border-radius: 4px; width: 800px !important; height: auto !important;"></p>
+				</div>
+			</div>
+		</div>
+		<div class="recommend">
+			<div class="wrap">
+				<h2>相关推荐</h2>
+				<ul class="cl" ; cont-name="new" ； ">
+					<li >
+						<a href="# ">
+							<h3 >大型商城解决方案</h3>
+							<div class="pic "><img src="http://file.waibaodashi.com/d/file/content/2017/12/5a405f5ba027c.jpg " alt=" ">
+						</a>
+					</li>
+					<li >
+						<a href="# ">
+							<h3 >mes系统解决方案</h3>
+							<img src="http://file.waibaodashi.com/20170925/1559/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20170925155643.jpg " alt=" ">
+						</a>
+					</li>
+					<li >
+						<a href="# ">
+							<h3 >erp系统解决方案</h3>
+							<img src="http://file.waibaodashi.com/d/file/content/2017/11/5a1baab5ef375.png " alt=" ">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="wrap ">
+				<div class="alllinks ">
+					<dl class="links ">
+						<dt>关于</dt>
+						<dd>
+							<a href="aboutUs.html" target="_blank">关于我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">联系我们</a>
+						</dd>
+						<dd>
+							<a href="aboutUs.html" target="_blank">加入我们</a>
+						</dd>
+					</dl>
+					<dl class="links ">
+						<dt>帮助</dt>
+						<dd>
+							<a href="/list/5.html" target="_blank">电话 13586948026</a>
+						</dd>
+						<dd>
+							<a href="/list/5.html#contact" target="_blank">邮箱 zhouhua09@126.com</a>
+						</dd>
+					</dl>
+					<dl class="links ">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="http://www.nit.net.cn/" target="_blank">浙江大学宁波理工学院</a>
+						</dd>
+						<dd>
+							<a href="http://gsl.nbyz.gov.cn/commerce/Default.aspx" target="_blank">鄞州工商联</a>
+						</dd>
+
+
+					</dl>
+					<div class="weixin ">
+						<p>关注微信公众号</p>
+						<img src="img/erweima.png">
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="banquan ">
+			<div class="warp ">
+				<p class="cr ">© 企拓信息&nbsp;2018</p>
+			</div>
+		</div>
+	</body>
+
+</html>
